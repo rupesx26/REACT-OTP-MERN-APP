@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/rupesh_m/.nvm/versions/node/v10.13.0/bin/node /Users/rupesh_m/.nvm/versions/node/v10.13.0/bin/yarn add body-parser cros express mongoose
+
+PATH: 
+  /Users/rupesh_m/.nvm/versions/node/v10.13.0/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/rupesh_m/.nvm/versions/node/v10.13.0/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/cros: Not found
+      at Request.params.callback [as _callback] (/Users/rupesh_m/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/rupesh_m/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/Users/rupesh_m/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/Users/rupesh_m/.nvm/versions/node/v10.13.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

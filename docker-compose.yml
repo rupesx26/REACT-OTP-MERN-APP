@@ -1,0 +1,31 @@
+version: "3"
+services:
+  client:
+    image: client
+    stdin_open: true
+    ports: 
+      - "3000:3000"
+    networks:
+      - growindigo_mern-app
+  backend-server:
+    image: backend-server
+    ports:
+      - "5000:5000"
+    networks:
+      - growindigo_mern-app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "27017:27017"
+    networks:
+      - growindigo_mern-app
+    volumes:
+      - mongo-data:/data/db
+networks:
+  growindigo_mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
