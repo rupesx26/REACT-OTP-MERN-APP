@@ -51,4 +51,21 @@ to start mongo `sudo mongod --dbpath /System/Volumes/Data/data/db`
 
 for DB access use https://docs.mongodb.com/compass/master/install
 
+#with Docker
+
+go to client folder 
+`yarn install`
+`docker build -t 'client' ./`
+
+go to backend folder 
+`yarn install`
+`docker build -t 'backend' ./`
+
+this will create 2 images
+client and backend-server
+
+go to root cd ../
+
+`docker-compose up`
+
 Cheers!
